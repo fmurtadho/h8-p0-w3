@@ -20,10 +20,11 @@ var tanggalLahirS = input[3].split('/',3)
     case '11': {console.log('November');break;}
     case '12': {console.log('Desember');break}
         }
-console.log(tanggalLahirS)
 
-let sorted = tanggalLahirS.sort(function(a, b){return b-a});
-console.log(sorted.join('-'));
+var splited = tanggalLahirS.join('-') //join with -
+var sorted = tanggalLahirS.sort(function(a, b){return b-a});//sort descending
+console.log(sorted)
+console.log(splited)
 
 console.log(input[1].slice(0,15))
 }
@@ -31,3 +32,13 @@ console.log(input[1].slice(0,15))
 var input = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"]
 
 dataHandling2(input);
+
+/**
+ * keluaran yang diharapkan (pada console)
+ *
+ * ["0001", "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internasional Metro"]
+ * Mei
+ * ["1989", "21", "05"]
+ * 21-05-1989
+ * Roman Alamsyah
+ */
