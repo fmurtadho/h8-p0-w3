@@ -1,6 +1,6 @@
 function targetTerdekat(arr) {
 var oStart = 0;
-xAda = 0;
+var xAda = 0;
 var xEnd = 0;
 var xDec = 0;
 //pertama tama memastikan ada x
@@ -39,7 +39,7 @@ if(xAda > 0){
         }
     }    
     }else if(xCount <= 0){ //jika x nya sebelum
-        for(n = oStart ; n >= 0 ; n--){
+        for(var n = oStart ; n >= 0 ; n--){
             if(arr[n] === 'x'){
                 xEnd = xEnd + n
                 break;

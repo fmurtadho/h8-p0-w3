@@ -1,7 +1,6 @@
 function hitungJumlahKata(str) {
 
     var counter = 1;
-    strS=str.split('')
     
     for(var i=0;i<str.length;i++){
         if(str[i]===' '){

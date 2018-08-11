@@ -11,7 +11,7 @@ function tentukanDeretAritmatika(arr) {
 var temp = 0;
 var basic = arr[1]-arr[0]
     for(var i = 0 ; i < arr.length - 1 ; i ++){
-        var temp = arr[i+1]-arr[i] 
+        temp = arr[i+1]-arr[i] 
         if(temp !== basic){
             return false
         }   
