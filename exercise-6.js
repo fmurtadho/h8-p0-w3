@@ -1,6 +1,6 @@
 function angkaPalindrome(input){
 
-for(i=0;i<=input;i++){
+for(var i=0;i<=input;i++){
 
     input++;
 
@@ -8,7 +8,7 @@ for(i=0;i<=input;i++){
 
     var dibalik=''
 
-    for(j=str.length-1;j>=0;j--){
+    for(var j=str.length-1;j>=0;j--){
 
         dibalik = dibalik + str[j]
 
